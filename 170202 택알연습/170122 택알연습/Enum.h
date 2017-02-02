@@ -1,0 +1,16 @@
+#pragma once
+
+enum SCENETYPE
+{
+	ST_CARACTORSELECT,
+	ST_SELECTSCENE,
+	ST_END
+};
+
+enum OBJTYPE
+{
+	OT_PLAYER,
+	OT_MONSTER,
+	OT_ITEM,
+	OT_END
+};
