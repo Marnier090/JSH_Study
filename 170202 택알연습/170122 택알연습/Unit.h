@@ -15,6 +15,9 @@ public:
 	virtual void	Release();
 
 public:
+	UNITINFO* GetUnitInfo(){return &m_tUnitInfo;}
+
+public:
 	CUnit(void);
 	virtual ~CUnit(void);
 };

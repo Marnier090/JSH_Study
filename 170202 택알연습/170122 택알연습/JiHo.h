@@ -1,8 +1,8 @@
 #pragma once
-#include "unit.h"
+#include "Player.h"
 
 class CJiHo :
-	public CUnit
+	public CPlayer
 {
 public:
 	virtual void	Initialize();

@@ -4,30 +4,20 @@
 
 class CSceneMgr
 {
-	
+	DECLARE_SINGLETON(CSceneMgr);
+
 private:
 	CScene*		m_pCScene;
 	SCENETYPE	m_eScneType;
 
 public:
-	CScene* GetScene() {return m_pCScene;}
+	CScene*		GetScene()		{return m_pCScene;}
+	SCENETYPE	GetSceneType()	{return m_eScneType;}
 
 public:
-	void	ChangeScene(SCENETYPE	_eScneType);
+	void		ChangeScene(SCENETYPE	_eScneType);
 
-/////////////////////////////////////////
-
-DECLARE_SINGLETON(CSceneMgr);
-
-//private:
-//	static CSceneMgr* m_pSceneMgr;
-//
-//public:
-//	static CSceneMgr* GetInstance();
-//	static void DestroyInstance();
-//
 private:
 	CSceneMgr(void);
 	virtual ~CSceneMgr(void);
-///////////////////////////////////////////
 };

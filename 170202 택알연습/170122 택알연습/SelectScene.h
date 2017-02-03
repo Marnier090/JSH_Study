@@ -4,6 +4,9 @@
 class CSelectScene :
 	public CScene
 {
+private:
+	int	m_iSelectScene;
+
 public:
 	virtual void	Initialize();
 	virtual int		Update();

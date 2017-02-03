@@ -1,8 +1,8 @@
 #pragma once
-#include "unit.h"
+#include "Player.h"
 
 class CHungMuk :
-	public CUnit
+	public CPlayer
 {
 public:
 	virtual void	Initialize();

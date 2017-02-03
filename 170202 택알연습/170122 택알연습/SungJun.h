@@ -1,9 +1,12 @@
 #pragma once
-#include "unit.h"
+#include "Player.h"
 
 class CSungJun :
-	public CUnit
+	public CPlayer
 {
+public:
+	void BehaviorCheck();
+
 public:
 	virtual void	Initialize();
 	virtual int		Update();

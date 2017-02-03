@@ -1,6 +1,9 @@
 #include "SceneMgr.h"
 #include "CharactorSelectScene.h"
 #include "SelectScene.h"
+#include "EasyField.h"
+#include "NormalField.h"
+#include "HardField.h"
 
 //CSceneMgr* CSceneMgr::m_pSceneMgr = NULL;
 IMPLEMENT_SINGLETON(CSceneMgr);
@@ -30,28 +33,25 @@ void	CSceneMgr::ChangeScene(SCENETYPE	_eScneType)
 		m_pCScene = new CSelectScene;
 		m_pCScene->Initialize();
 		break;
+
+	case ST_EASYFIELD:
+		m_pCScene = new CEasyField;
+		m_pCScene->Initialize();
+		break;
+
+	case ST_NORMALFIELD:
+		m_pCScene = new CNormalField;
+		m_pCScene->Initialize();
+		break;
+
+	case ST_HARDFIELD:
+		m_pCScene = new CHardField;
+		m_pCScene->Initialize();
+		break;
+
+	default:
+		return;
 	}
+
+	m_eScneType = _eScneType;
 }
-
-
-///////////////////////////////////////////
-//CSceneMgr* CSceneMgr::GetInstance()
-//{
-//	if(m_pSceneMgr == NULL)
-//	{
-//		m_pSceneMgr = new CSceneMgr;
-//	}
-//	return m_pSceneMgr;
-//}
-//
-//void CSceneMgr::DestroyInstance()
-//{
-//	if(m_pSceneMgr != NULL)
-//	{
-//		delete m_pSceneMgr;
-//		m_pSceneMgr = NULL;
-//	}
-//}
-
-////////////////////////////////////////////
-

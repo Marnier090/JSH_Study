@@ -204,6 +204,18 @@
 					>
 				</File>
 			</Filter>
+			<Filter
+				Name="99.3 CollisionMgr"
+				>
+				<File
+					RelativePath=".\CollisionMgr.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\CollisionMgr.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="00. Scene"
@@ -231,6 +243,50 @@
 			<Filter
 				Name="00.3 Field"
 				>
+				<File
+					RelativePath=".\Field.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Field.h"
+					>
+				</File>
+				<Filter
+					Name="a. EasyField"
+					>
+					<File
+						RelativePath=".\EasyField.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\EasyField.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="b. NormalField"
+					>
+					<File
+						RelativePath=".\NormalField.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\NormalField.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="c. HardField"
+					>
+					<File
+						RelativePath=".\HardField.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\HardField.h"
+						>
+					</File>
+				</Filter>
 			</Filter>
 			<Filter
 				Name="00.4 Shop"
@@ -292,45 +348,117 @@
 					>
 				</File>
 				<Filter
-					Name="a. SungJun"
+					Name="b. Monster"
 					>
 					<File
-						RelativePath=".\SungJun.cpp"
+						RelativePath=".\Monster.cpp"
 						>
 					</File>
 					<File
-						RelativePath=".\SungJun.h"
+						RelativePath=".\Monster.h"
 						>
 					</File>
+					<Filter
+						Name="b.3 Rain"
+						>
+						<File
+							RelativePath=".\Rain.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\Rain.h"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="b.1 MrNo"
+						>
+						<File
+							RelativePath=".\MrNo.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\MrNo.h"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="b.2 Hanzo"
+						>
+						<File
+							RelativePath=".\Hanzo.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\Hanzo.h"
+							>
+						</File>
+					</Filter>
 				</Filter>
 				<Filter
-					Name="b. HungMuk"
+					Name="a. Player"
 					>
 					<File
-						RelativePath=".\HungMuk.cpp"
+						RelativePath=".\Player.cpp"
 						>
 					</File>
 					<File
-						RelativePath=".\HungMuk.h"
+						RelativePath=".\Player.h"
 						>
 					</File>
-				</Filter>
-				<Filter
-					Name="c. JiHo"
-					>
-					<File
-						RelativePath=".\JiHo.cpp"
+					<Filter
+						Name="a.1 SungJun"
 						>
-					</File>
-					<File
-						RelativePath=".\JiHo.h"
+						<File
+							RelativePath=".\SungJun.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\SungJun.h"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="a.3 JiHo"
 						>
-					</File>
+						<File
+							RelativePath=".\JiHo.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\JiHo.h"
+							>
+						</File>
+					</Filter>
+					<Filter
+						Name="a.2 HungMuk"
+						>
+						<File
+							RelativePath=".\HungMuk.cpp"
+							>
+						</File>
+						<File
+							RelativePath=".\HungMuk.h"
+							>
+						</File>
+					</Filter>
 				</Filter>
 			</Filter>
 			<Filter
 				Name="01-2 Item"
 				>
+				<Filter
+					Name="a. Cake"
+					>
+				</Filter>
+				<Filter
+					Name="b. Lion"
+					>
+				</Filter>
+				<Filter
+					Name="c."
+					>
+				</Filter>
 			</Filter>
 		</Filter>
 	</Files>

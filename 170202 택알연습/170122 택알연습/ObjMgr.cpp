@@ -30,6 +30,11 @@ void CObjMgr::DeleteList(OBJTYPE _eObjType)
 	m_ObjList[_eObjType].clear();
 }
 
+list<CObj*>& CObjMgr::GetObjList(OBJTYPE _eObjType)
+{
+	return m_ObjList[_eObjType];
+}
+
 void CObjMgr::Initialize()
 {
 
@@ -37,6 +42,8 @@ void CObjMgr::Initialize()
 
 int	CObjMgr::Update()
 {
+	int iResult = 0;
+
 	for(int i = 0; i < OT_END; ++i)
 	{
 		m_iter = m_ObjList[i].begin();
@@ -44,11 +51,15 @@ int	CObjMgr::Update()
 
 		while(m_iter != m_iter_end)
 		{
-			if((*m_iter)->Update() == 1)
+			iResult = (*m_iter)->Update();
+
+			if(iResult == 1)		// 지워주기
 			{
 				delete (*m_iter);
 				m_iter = m_ObjList[i].erase(m_iter);
 			}
+			else if(iResult == 2)	// 신전환 (안쪽에서 지워주게 되면 iter를 신전환하면서 지워줄수도 있으므로)
+				return 0;
 			else
 				++m_iter;
 		}

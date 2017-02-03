@@ -18,6 +18,9 @@ public:
 	void DeleteList(OBJTYPE _eObjType);
 
 public:
+	list<CObj*>& GetObjList(OBJTYPE _eObjType);
+
+public:
 	void	Initialize();
 	int		Update();
 	void	Render();
